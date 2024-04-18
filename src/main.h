@@ -128,20 +128,21 @@ typedef struct ray_s
 } ray_t;
 
 extern ray_t rays[NUM_RAYS];
-// Raytrace 1
+// Raycast 1
 void castAllRays(void);
 void castRay(float rayAngle, int stripId);
 void renderRays(void);
 void horzIntersection(float rayAngle);
 void vertIntersection(float rayAngle);
 
-// Raytrace 2
+// Raycast 2
 float distanceBetweenPoints(float x1, float y1, float x2, float y2);
 bool isRayFacingUp(float angle);
 bool isRayFacingDown(float angle);
 bool isRayFacingLeft(float angle);
 bool isRayFacingRight(float angle);
 
+// Main
 void render_game(void);
 
 #endif
